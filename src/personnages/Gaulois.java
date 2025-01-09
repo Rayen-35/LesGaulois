@@ -10,8 +10,17 @@ public class Gaulois {
         this.force = force;
     }
 
-    public String getNom() {
+   public String getNom() {
         return nom;
     }
-    
-}
+   
+   public void parler (String A) {
+	   System.out.println ("Le gaulois"+getNom()+ " :<< "+ A+ ">>") ;
+   }
+   public static void main(String[] args) {
+		Gaulois asterix = new Gaulois ("Asterix",8);
+		System.out.println (asterix);
+		System.out.println (asterix.getNom());
+} 
+}  
+
